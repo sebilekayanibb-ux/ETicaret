@@ -1,0 +1,10 @@
+<Solution>
+  <Folder Name="/src/" />
+  <Folder Name="/src/Backend/">
+    <Project Path="ETicaret.API/ETicaret.API.csproj" />
+    <Project Path="ETicaret.Application/ETicaret.Application.csproj" />
+    <Project Path="ETicaret.Domain/ETicaret.Domain.csproj" />
+    <Project Path="ETicaret.Infrastructure/ETicaret.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/src/Frontend/" />
+</Solution>
