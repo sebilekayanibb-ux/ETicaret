@@ -7,11 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Entities\Category\" />
-    <Folder Include="Entities\Cart\" />
-    <Folder Include="Entities\Order\" />
-    <Folder Include="Entities\User\" />
-    <Folder Include="Entities\Product\" />
+    <Folder Include="Entities\CartItem\" />
+    <Folder Include="Entities\ProductVariant\" />
+    <Folder Include="Entities\OrderItem\" />
+    <Folder Include="Entities\Payment\" />
   </ItemGroup>
 
 </Project>
