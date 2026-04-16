@@ -6,11 +6,5 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
-  <ItemGroup>
-    <Folder Include="Entities\CartItem\" />
-    <Folder Include="Entities\ProductVariant\" />
-    <Folder Include="Entities\OrderItem\" />
-    <Folder Include="Entities\Payment\" />
-  </ItemGroup>
 
-</Project>
+  </Project>

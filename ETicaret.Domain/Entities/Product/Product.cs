@@ -18,4 +18,5 @@ public class Product : BaseEntity
     public Brand.Brand Brand { get; set; } = null!;
     public ICollection<ProductVariant> Variants { get; set; } = [];
     public ICollection<ProductImage> Images { get; set; } = [];
+    public ICollection<ProductAttributeValue> AttributeValues { get; set; } = [];
 }
