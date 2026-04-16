@@ -76,10 +76,28 @@
 | Property | Tür | Türkçe |
 |---|---|---|
 | `ProductId` | Guid | Ürün FK |
-| `Color` | string | Renk |
-| `Size` | string | Beden |
+| `ColorId` | Guid | Renk FK → Color tablosuna bağlı |
+| `SizeId` | Guid | Beden FK → Size tablosuna bağlı |
+| `SKU` | string | Benzersiz ürün kodu (örn: LCW-001-MAVI-M) |
+| `Price` | decimal? | Varyanta özel fiyat (null ise Product.SalePrice geçerli) |
 | `Length` | string? | Uzunluk (Kısa/Normal/Uzun) |
 | `Stock` | int | Stok adedi |
+
+---
+
+## 🔴 Color *(Renk)*
+| Property | Tür | Türkçe |
+|---|---|---|
+| `Name` | string | Renk adı (Kırmızı, Mavi...) |
+| `HexCode` | string | Renk kodu (#FF0000) — renk kutucuğu göstermek için |
+
+---
+
+## 📐 Size *(Beden)*
+| Property | Tür | Türkçe |
+|---|---|---|
+| `Name` | string | Beden adı (XS, S, M, L, XL) |
+| `SortOrder` | int | Sıralama (XS=1, S=2, M=3...) — küçükten büyüğe sıralar |
 
 ---
 
