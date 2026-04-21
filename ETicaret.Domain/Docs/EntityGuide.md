@@ -142,16 +142,22 @@
 | `ShippingFee` | decimal | Kargo ücreti |
 | `CashOnDeliveryFee` | decimal | Kapıda ödeme ücreti |
 | `DiscountAmount` | decimal | İndirim tutarı |
+| `CouponCode` | string? | Kullanılan kupon kodu |
+| `CouponDiscount` | decimal | Kupon indirim tutarı |
 
 ---
 
-## 📋 OrderItem *(Sipariş Kalemi)*
+## 📋 OrderItem
 | Property | Tür | Türkçe |
 |---|---|---|
 | `OrderId` | Guid | Sipariş FK |
 | `ProductVariantId` | Guid | Ürün varyantı FK |
 | `Quantity` | int | Adet |
-| `UnitPrice` | decimal | Birim fiyat (anlık) |
+| `UnitPrice` | decimal | Birim fiyat (sipariş anındaki) |
+| `ProductName` | string | Ürün adı snapshot — ürün silinse bile korunur |
+| `ColorName` | string? | Renk adı snapshot |
+| `SizeName` | string? | Beden adı snapshot |
+| `ImageUrl` | string? | Ürün görseli snapshot |
 
 ---
 

@@ -18,4 +18,5 @@ public class ReturnOrder : BaseEntity
 
     // Navigation Properties
     public Order.Order Order { get; set; } = null!;
+    public ICollection<ReturnOrderItem> ReturnOrderItems { get; set; } = [];
 }

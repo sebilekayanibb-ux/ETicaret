@@ -10,6 +10,7 @@ public class Payment : BaseEntity
     public PaymentMethod Method { get; set; }
     public PaymentStatus Status { get; set; } = PaymentStatus.Pending;
     public string? BankName { get; set; }
+    public string? CardLastFourDigits { get; set; }
     public int InstallmentCount { get; set; } = 1;
     public string? InvoiceNumber { get; set; }
     public bool IsBillingSameAsShipping { get; set; } = true;
